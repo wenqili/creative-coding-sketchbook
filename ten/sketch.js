@@ -16,15 +16,8 @@ var para = {
   num: 10,
 }
 
-// window.onload = function(){
-// var gui = new dat.GUI();
-// gui.add(para,'num',100,1000);
-// gui.hide();
-// }
-
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  // createCanvas(700,700);
   var btnChange = select('#change');
   btnChange.mousePressed(changePattern);
 
@@ -39,18 +32,14 @@ function setup() {
 
   attractor = new Attractor();
   background(240);
-
-
 }
 
 function draw() {
-  // background(240);
   attractor.display();
   for (i = 0; i < para.num; i++) {
     //caculate each mover's attractive force to mover[i]
     for (j = 0; j < para.num; j++) {
       var aforce = mover[j].attract(mover[i]);
-    // mover[i].applyForce(aforce);
     }
 
     //caculate attractor's force to mover[i]
@@ -61,9 +50,9 @@ function draw() {
   }
 }
 
-function windowResized() {
-  resizeCanvas(windowWidth, windowHeight);
-}
+// function windowResized() {
+//   resizeCanvas(windowWidth, windowHeight);
+// }
 
 
 function changePattern() {

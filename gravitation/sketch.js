@@ -17,7 +17,9 @@ var para = {
 }
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  // createCanvas(windowWidth, windowHeight);
+  createCanvas(500, 500);
+
   background(240);
 
   var btnChange = select('#change');
@@ -48,9 +50,9 @@ function draw() {
   }
 }
 
-function windowResized() {
-  resizeCanvas(windowWidth, windowHeight);
-}
+// function windowResized() {
+//   resizeCanvas(windowWidth, windowHeight);
+// }
 
 function changePattern() {
   for (i = 0; i < para.num; i++) {
