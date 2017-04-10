@@ -17,8 +17,8 @@ var para = {
 }
 
 function setup() {
-  // createCanvas(windowWidth, windowHeight);
-  createCanvas(500, 500);
+  createCanvas(windowWidth, windowHeight);
+  // createCanvas(500, 500);
 
   background(240);
 
