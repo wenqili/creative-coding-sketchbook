@@ -18,6 +18,7 @@ var para = {
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
+  background(240);
 
   var btnChange = select('#change');
   btnChange.mousePressed(changePattern);
@@ -34,7 +35,6 @@ function setup() {
   }
   attractor = new Attractor();
   cNoise = 0;
-
 }
 
 function draw() {
